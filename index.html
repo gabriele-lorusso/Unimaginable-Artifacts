@@ -3,15 +3,15 @@
   <div id="error" 
     style="font-size: 50px; 
     font-family: Arial, sans-serif; 
-    margin: auto ; 
-    text-align:center; 
-    vertical-align: middle; ">
+    margin: auto 0;
+    margin-top: 100%;
+    text-align:center; ">
      <p> Please open the link on a computer </p>
     </div>
 <script type="text/javascript" >
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
       document.getElementById("error");
-      document.getElementsByTagName("BODY").style.display = "none";
+      window.stop();
     }
     else {
       document.getElementById("error").style.display = "none";
